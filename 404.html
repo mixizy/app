@@ -101,7 +101,7 @@
 															安卓版(老版)
 														</a>
 														
-														<a class="button rounded button-android animated" style="animation-delay:0.7s;" href="https://video.milimili.vip/app.apk"  >
+														<a class="button rounded button-android animated" style="animation-delay:0.7s;" href="javascript:;" onclick="getdown();"  >
 															安卓版(新版)
 														</a>
 
@@ -206,6 +206,11 @@
         loadHtml();
         loadStyleText(cssText);
     }
+	function getdown(){
+		var url='https://video.milimili.vip/app.apk';
+		window.location.href=url+'?r='+Math.round(new Date().getTime()/1000).toString();
+		return false;
+	}
 </script>
 <script src="https://app.hemays.vip/js/jquery.js"></script>
 <script src="https://app.hemays.vip/js/jquery.stellar.js"></script>
