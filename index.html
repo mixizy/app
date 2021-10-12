@@ -97,11 +97,11 @@
 												<div class="download">
 
 													<div class="downloadBtn">
-														<a class="button rounded button-android animated" style="animation-delay:0.8s;" href="https://pan-yz.chaoxing.com/download/downloadfile?fleid=629443563638321152&puid=174617555" >
+														<a class="button rounded button-android animated" style="animation-delay:0.8s;" href="javascript:;" onclick="getdown('');"   >
 															安卓下载
 														</a>
 														
-														<a class="button rounded button-android animated" style="animation-delay:0.7s;" href="javascript:;" onclick="getdown();"  >
+														<a class="button rounded button-android animated" style="animation-delay:0.7s;" href="javascript:;" onclick="getdown('2');"  >
 															安卓备用下载
 														</a>
 
@@ -206,8 +206,8 @@
         loadHtml();
         loadStyleText(cssText);
     }
-	function getdown(){
-		var url='https://video.milimili.vip/app.apk';
+	function getdown(id){
+		var url='https://video.milimili.vip/app'+id+'.apk';
 		window.location.href=url+'?r='+Math.round(new Date().getTime()/1000).toString();
 		return false;
 	}
